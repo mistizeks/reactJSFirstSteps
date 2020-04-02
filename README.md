@@ -1,2 +1,0 @@
-# reactJSFirstSteps
-Created with CodeSandbox
