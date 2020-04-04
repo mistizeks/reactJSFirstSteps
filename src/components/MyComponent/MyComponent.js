@@ -5,12 +5,18 @@ class MyComponent extends React.Component {
     text: "test state"
   };
 
-  handleChange = () => console.log("change");
+  handleChange = event => {
+    this.setState({ text: event.target.value });
+  };
 
   render() {
     return (
       <>
-        <input onChange={this.handleChange} placeholder="your text" />
+        <input
+          value={this.state.text}
+          onChange={this.handleChange}
+          placeholder="your text"
+        />
         <h1>{this.state.text}</h1>
       </>
     );
